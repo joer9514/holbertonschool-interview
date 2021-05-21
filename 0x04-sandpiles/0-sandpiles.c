@@ -1,15 +1,16 @@
-include <stdlib.h>
 #include <stdio.h>
+#include "sandpiles.h"
 
 /**
- * grid_addition - add 2 grids
+ * grid_sum - sum 2 grids
  * @grid1: first matrix
  * @grid2: second matrix
  */
 
-void grid_addition(int grid1[3][3], int grid2[3][3])
+void grid_sum(int grid1[3][3], int grid2[3][3])
 {
-	int i, j;
+	int i = 0;
+	int j = 0;
 
 	for (i = 0; i < 3; i++)
 	{
@@ -100,7 +101,7 @@ void grid_change(int grid1[3][3])
 			}
 		}
 	}
-	grid_addition(grid1, gridx);
+	grid_sum(grid1, gridx);
 }
 
 /**
@@ -111,7 +112,7 @@ void grid_change(int grid1[3][3])
 
 void sandpiles_sum(int grid1[3][3], int grid2[3][3])
 {
-	grid_addition(grid1, grid2);
+	grid_sum(grid1, grid2);
 	while (!grid_is_ok(grid1))
 	{
 		grid_print(grid1);

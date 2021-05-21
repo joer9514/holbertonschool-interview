@@ -1,12 +1,10 @@
-#ifndef SANDPILES_H_
-#define SANDPILES_H_
+#ifndef SANDPILES_H
+#define SANDPILES_H
 
 #include <stdlib.h>
 #include <stdio.h>
 
 void sandpiles_sum(int grid1[3][3], int grid2[3][3]);
-void print_grid_unstable(int grid[3][3]);
-int sandpiles_check(int grid1[3][3], int grid[3][3]);
-void redistribution_sand(int grid1[3][3], int i, int j);
-
-#endif /* SANDPILES_H_ */
+int validation(int grid[3][3]);
+void sandpiles_loop(int grid[3][3], int grid2[3][3]);
+#endif

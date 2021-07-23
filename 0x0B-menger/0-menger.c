@@ -15,7 +15,7 @@ void menger(int level)
 	if (level < 0)
 		return;
 
-	pot_a = (int)pow(3, level);
+	pot_a = (int) pow(3, level);
 
 	for (i = 0; i < pot_a; i++)
 	{

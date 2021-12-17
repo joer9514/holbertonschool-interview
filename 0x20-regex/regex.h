@@ -1,8 +1,4 @@
-#ifndef REGEX_H
-#define REGEX_H
-
-#include <stdio.h>
-
+#ifndef _H_REGEX
+#define _H_REGEX
 int regex_match(char const *str, char const *pattern);
-
 #endif
